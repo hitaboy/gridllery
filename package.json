@@ -1,0 +1,12 @@
+{
+  "name": "@hitaboy/gridllery",
+  "version": "1.0.0",
+  "description": "Grid gallery system",
+  "license": "MIT",
+  "repository": "hitaboy/gridllery",
+  "main": "index.js",
+  "keywords": [
+    "grid",
+    "gallery"
+  ]
+}
