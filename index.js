@@ -1,5 +1,6 @@
 import $ from 'jquery'
-module.exports = function gridllery(args) {
+
+export function gridllery(args) {
   /*
   containerClass:'gridllery',
   numberoffotos:106,
