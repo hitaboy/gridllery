@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-export function gridllery(args) {
+var gridllery = function gridllery(args) {
   /*
   containerClass:'gridllery',
   numberoffotos:106,
@@ -22,3 +22,5 @@ export function gridllery(args) {
     console.log($(this).data('big'))
   })
 }
+
+export default gridllery
