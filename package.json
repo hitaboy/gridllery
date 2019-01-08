@@ -1,0 +1,49 @@
+{
+  "name": "@hitaboy/gridllery",
+  "version": "5.4.0",
+  "description": "Grid gallery system",
+  "license": "MIT",
+  "repository": "hitaboy/gridllery",
+  "main": "index.js",
+  "keywords": [
+    "grid",
+    "gallery"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^8.5.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.3.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "hard-source-webpack-plugin": "^0.7.4",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.0.8",
+    "sass-loader": "^7.0.1",
+    "simple-progress-webpack-plugin": "^1.1.2",
+    "standard": "^11.0.1",
+    "standard-loader": "^6.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-runtime": "^6.23.0"
+  }
+}
