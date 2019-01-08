@@ -1,3 +1,4 @@
+import $ from 'jquery'
 module.exports = function gridllery(args) {
   /*
   containerClass:'gridllery',
@@ -7,14 +8,13 @@ module.exports = function gridllery(args) {
   smallFolder:"small/"
   */
   console.log(args)
-  var containers = document.getElementsByClassName(args.containerClass)
-  var container = containers[0]
-  console.log(container)
+  var $container = $(args.containerClass)
+  console.log($container)
   var i;
   for (i = 0; i < args.numberoffotos; i++) {
-    var img = document.createElement('img');
-    img.src = args.folder+args.smallFolder+i+'.jpg'
-    container.appendChild(img);
+    var img = $('<img class="block">')
+    img.attr('src', args.folder+args.smallFolder+i+'.jpg')
+    $container.append(img)
   }
 
 }

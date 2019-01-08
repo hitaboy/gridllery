@@ -8,5 +8,8 @@
   "keywords": [
     "grid",
     "gallery"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
