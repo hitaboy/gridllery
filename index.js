@@ -8,7 +8,7 @@ module.exports = function gridllery(args) {
   */
   console.log(args)
   var container = document.getElementsByClassName(args.containerClass)
-
+  console.log(container)
   var i;
   for (i = 0; i < args.numberoffotos; i++) {
     var img = document.createElement('img');
