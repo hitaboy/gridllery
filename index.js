@@ -7,7 +7,8 @@ module.exports = function gridllery(args) {
   smallFolder:"small/"
   */
   console.log(args)
-  var container = document.getElementsByClassName(args.containerClass)
+  var containers = document.getElementsByClassName(args.containerClass)
+  var container = containers[0]
   console.log(container)
   var i;
   for (i = 0; i < args.numberoffotos; i++) {
