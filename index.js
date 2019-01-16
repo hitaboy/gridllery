@@ -26,7 +26,7 @@ var gridllery = function gridllery(args) {
     $container.append($item)
   }
 
-  $container.parent().append('<div class="gridllery_big"><svg xmlns="http://www.w3.org/2000/svg" class="gridllery_big_close" width="24.707" height="24.707"><g data-name="Group 1" fill="none" stroke="#ffffff"><path data-name="Line 1" d="M24.354.354l-24 24"/><path data-name="Line 2" d="M.354.354l24 24"/></g></svg><div class="gridllery_big_container"></div><svg xmlns="http://www.w3.org/2000/svg" class="gridllery_big_next" width="12.707" height="24.707"><g data-name="Group 2" fill="none" stroke="#ffffff"><path data-name="Line 1" d="M12.354 12.354l-12 12"/><path data-name="Line 2" d="M.354.354l12 12"/></g></svg><svg xmlns="http://www.w3.org/2000/svg" class="gridllery_big_previous" width="12.707" height="24.707"><g data-name="Group 2" fill="none" stroke="#ffffff"><path data-name="Line 1" d="M.354 12.354l12-12"/><path data-name="Line 2" d="M12.354 24.354l-12-12"/></g></svg></div>')
+  $container.parent().append('<div class="gridllery_big"><a href="" class="gridllery_big_download" target="_blank" download><svg xmlns="http://www.w3.org/2000/svg" width="22.379" height="35.691"><g data-name="Group 746" fill="none" stroke="#fff"><g data-name="Group 745"><g data-name="Group 1"><path data-name="Line 1" d="M20.189 12.906l-8.625 8.625"/><path data-name="Line 2" d="M2.189 12.906l8.625 8.625"/></g><path data-name="Line 2" d="M11.189.5v21.378"/></g><path data-name="Line 2" d="M20.884 25.748L2 25.75"/></g></svg></a><svg xmlns="http://www.w3.org/2000/svg" class="gridllery_big_close" width="24.707" height="24.707"><g data-name="Group 1" fill="none" stroke="#ffffff"><path data-name="Line 1" d="M24.354.354l-24 24"/><path data-name="Line 2" d="M.354.354l24 24"/></g></svg><div class="gridllery_big_container"></div><svg xmlns="http://www.w3.org/2000/svg" class="gridllery_big_next" width="12.707" height="24.707"><g data-name="Group 2" fill="none" stroke="#ffffff"><path data-name="Line 1" d="M12.354 12.354l-12 12"/><path data-name="Line 2" d="M.354.354l12 12"/></g></svg><svg xmlns="http://www.w3.org/2000/svg" class="gridllery_big_previous" width="12.707" height="24.707"><g data-name="Group 2" fill="none" stroke="#ffffff"><path data-name="Line 1" d="M.354 12.354l12-12"/><path data-name="Line 2" d="M12.354 24.354l-12-12"/></g></svg></div>')
 
   packAll()
   setTimeout(function(){
@@ -37,6 +37,7 @@ var gridllery = function gridllery(args) {
     var big = $(this).data('big')
     $('.gridllery_big').addClass('active')
     $('.gridllery_big_container').css('background-image','url('+big+')')
+    $('.gridllery_big_download').attr('href',big)
     $('.gridllery_item').removeClass('active')
     $(this).addClass('active')
   })
